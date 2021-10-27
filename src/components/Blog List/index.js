@@ -9,7 +9,7 @@ const BlogList = ({ blogs = [] }) => {
         const { title, slug, author, date, thumbnail } = blog;
         const pathToImage = getImage(thumbnail);
         return (
-          <Link key={slug} to={`/blog/${slug}`} className="block">
+          <Link key={slug} to={`/blogs/${slug}`} className="block">
             <GatsbyImage
               image={pathToImage}
               alt={title}
