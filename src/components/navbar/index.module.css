@@ -1,0 +1,16 @@
+.navbar-collapse {
+  animation-name: collapse;
+  animation-duration: 0.3s;
+}
+
+@keyframes collapse {
+  10% {
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 2ms all ease-in-out;
+  }
+  50% {
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 2ms all ease-in-out;
+  }
+  100% {
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 2ms all ease-in-out;
+  }
+}
