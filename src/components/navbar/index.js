@@ -43,12 +43,12 @@ const Navbar = () => {
             home
           </Link>
           <Link
-            to="/recipes"
+            to="/blogs"
             className={navLink}
             activeClassName={activeLink}
             onClick={() => setShow(false)}
           >
-            recipes
+            blogs
           </Link>
           <Link
             to="/tags"
