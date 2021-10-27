@@ -13,7 +13,7 @@ const BlogList = ({ blogs = [] }) => {
             <GatsbyImage
               image={pathToImage}
               alt={title}
-              className="h-60 rounded-lg md:h-36 sm:h-40"
+              className="h-60 rounded-lg md:h-44 sm:h-40"
             />
             <h5 className="mb-0 mt-1 text-gray-900 font-medium font-serif">
               {title}

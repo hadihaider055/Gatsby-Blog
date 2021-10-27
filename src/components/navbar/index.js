@@ -31,7 +31,9 @@ const Navbar = () => {
         </div>
         <div
           className={`overflow-hidden flex flex-col transition-all duration-300 ease-in-out md:h-auto md:flex-row md:items-center md:w-full md:relative ${
-            show ? "h-96 absolute z-10 bg-gray-50 w-full" : "h-0 absolute"
+            show
+              ? "h-96 absolute z-10 bg-gray-50 w-full"
+              : "h-0 absolute w-full"
           }`}
         >
           <Link
@@ -71,7 +73,7 @@ const Navbar = () => {
           >
             <Link
               to="/contact"
-              className="py-2 px-4 cursor-pointer text-white bg-purple-700 border-0 rounded-md tracking-wider shadow-lg transition-all ease-in-out duration-300 capitalize hover:shadow-xl md:py-1"
+              className="py-2 px-4 cursor-pointer text-white hover:bg-purple-800 bg-purple-700 border-0 rounded-md tracking-wider shadow-lg transition-all ease-in-out duration-300 capitalize hover:shadow-xl md:py-1"
               onClick={() => setShow(false)}
             >
               contact
