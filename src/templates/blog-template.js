@@ -54,7 +54,7 @@ const BlogTemplate = ({ data }) => {
                     );
                   })}
                 </div>
-                <h2 className="text-3xl font-bold my-10 mb-5 text-center font-serif tracking-wider">
+                <h2 className="text-lg md:text-3xl font-bold my-10 mb-5 text-center font-serif tracking-wider">
                   {title}
                 </h2>
                 <div className="w-full mx-auto flex items-center justify-center">
