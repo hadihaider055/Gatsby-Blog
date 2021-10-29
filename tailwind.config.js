@@ -11,7 +11,7 @@ module.exports = {
         roboto: ["Roboto", "sans-serif"],
       },
       minHeight: {
-        "3/4": "95vh",
+        "3/4": "93.9vh",
       },
       height: {
         "3/5": "60vh",

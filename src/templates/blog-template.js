@@ -5,6 +5,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { renderRichText } from "gatsby-source-contentful/rich-text";
 import slugify from "slugify";
 import { INLINES } from "@contentful/rich-text-types";
+import Seo from "../components/seo";
 
 const BlogTemplate = ({ data }) => {
   const blogs = data.allContentfulTiedupBlog.nodes;
@@ -28,20 +29,24 @@ const BlogTemplate = ({ data }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
-
   return (
     <Layout>
+      <Seo title="Blog" />
       <main className="max-w-screen-xl w-11/12 mx-auto min-h-3/4 mt-7 mb-20">
         <section className="bg-white p-10 shadow-xl rounded-lg">
-          {blogs.map((red) => {
-            const { title, mainImage, slug, blog, tags, author, date } = red;
+          {blogs.map((getBlog) => {
+            const { title, mainImage, slug, blog, tags, author, date } =
+              getBlog;
             const pathToImage = getImage(mainImage);
             return (
               <div key={slug}>
                 <div className="mx-auto w-full text-center">
                   {tags.map((tag) => {
                     return (
-                      <Link to={`/tags/${slugify(tag, { lower: true })}`}>
+                      <Link
+                        to={`/tags/${slugify(tag, { lower: true })}`}
+                        key={tag}
+                      >
                         <span className="py-2 px-4 cursor-pointer font-serif text-white hover:bg-purple-800 bg-purple-700 border-0 rounded-md tracking-wider shadow-lg transition-all ease-in-out duration-300 capitalize hover:shadow-xl m-2">
                           {tag}
                         </span>

@@ -2,10 +2,12 @@ import React from "react";
 import Layout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image";
 import AllBlogs from "../components/All Blogs";
+import Seo from "../components/seo";
 
 const IndexPage = () => {
   return (
     <Layout>
+      <Seo title="Home" />
       <main className="max-w-screen-xl w-11/12 mx-auto min-h-3/4">
         <header className="relative mb-8 h-3/5">
           <StaticImage

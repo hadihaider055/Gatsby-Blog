@@ -3,11 +3,13 @@ import Layout from "../components/layout";
 import { graphql, Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import BlogList from "../components/Blog List";
+import Seo from "../components/seo";
 
 const About = ({ data }) => {
   const blogs = data.allContentfulTiedupBlog.nodes;
   return (
     <Layout>
+      <Seo title="About" />
       <main className="max-w-screen-xl w-11/12 mx-auto min-h-3/4 mt-7">
         <section className="grid gap-x-8 gap-y-16 pb-12 md:grid-cols-2 items-center md:h-96">
           <article>

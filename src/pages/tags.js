@@ -3,12 +3,14 @@ import Layout from "../components/layout";
 import { graphql, Link } from "gatsby";
 import setupTags from "../utils/setupTags";
 import slugify from "slugify";
+import Seo from "../components/seo";
 
 const Tags = ({ data }) => {
   const newTags = setupTags(data.allContentfulTiedupBlog.nodes);
 
   return (
     <Layout>
+      <Seo title="Tags" />
       <main className="max-w-screen-xl w-11/12 mx-auto min-h-3/4 mt-7">
         <section className="grid gap-8 pb-12 sm:grid-cols-2 md:grid-cols-3">
           {newTags.map((tag, index) => {

@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
 import BlogList from "../components/Blog List";
+import Seo from "../components/seo";
 
 const Contact = ({ data }) => {
   const blogs = data.allContentfulTiedupBlog.nodes;
@@ -12,6 +13,7 @@ const Contact = ({ data }) => {
 
   return (
     <Layout>
+      <Seo title="Contact" />
       <main className="max-w-screen-xl w-11/12 mx-auto min-h-3/4 mt-7">
         <section className="grid gap-x-36 gap-y-12 md:grid-cols-2 items-center justify-between">
           <article>

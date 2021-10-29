@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "My Gatsby Site",
+    title: "Tiedup.pk",
+    description: "Be updated, Be knowned",
+    author: "@hadihaider",
   },
   plugins: [
     "gatsby-plugin-postcss",
