@@ -5,7 +5,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { renderRichText } from "gatsby-source-contentful/rich-text";
 import slugify from "slugify";
 import { INLINES } from "@contentful/rich-text-types";
-import { HiOutlineMail } from "react-icons/hi";
 
 const BlogTemplate = ({ data }) => {
   const blogs = data.allContentfulTiedupBlog.nodes;
