@@ -1,3 +1,6 @@
+const dotenv = require("dotenv");
+dotenv.config();
+
 module.exports = {
   siteMetadata: {
     title: "Tiedup.pk",
@@ -13,8 +16,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `ha7oafx92z4o`,
-        accessToken: `WEB-y1GSmUwpIgWMAWEw6bNwaw-ko-8y8pcqysJZeYw`,
+        spaceId: process.env.SPACE_ID,
+        accessToken: process.env.ACCESS_TOKEN,
       },
     },
   ],
