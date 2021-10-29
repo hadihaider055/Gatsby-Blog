@@ -5,6 +5,11 @@ import BlogList from "../components/Blog List";
 
 const Contact = ({ data }) => {
   const blogs = data.allContentfulTiedupBlog.nodes;
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <Layout>
       <main className="max-w-screen-xl w-11/12 mx-auto min-h-3/4 mt-7">
@@ -26,7 +31,10 @@ const Contact = ({ data }) => {
             </p>
           </article>
           <article>
-            <form className="max-w-lg w-full bg-white rounded-md shadow-lg py-8 px-10">
+            <form
+              className="max-w-lg w-full bg-white rounded-md shadow-lg py-8 px-10"
+              onSubmit={handleSubmit}
+            >
               <div className="mb-4">
                 <label
                   htmlFor="name"
@@ -38,7 +46,7 @@ const Contact = ({ data }) => {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full py-1 px-3 rounded-md bg-gray-50 border border-gray-300"
+                  className="w-full py-1 px-3 rounded-md bg-gray-100 border border-gray-300"
                 />
               </div>
               <div className="mb-4">
@@ -52,7 +60,7 @@ const Contact = ({ data }) => {
                   type="email"
                   id="email"
                   name="email"
-                  className="w-full py-1 px-3 rounded-md bg-gray-50 border border-gray-300"
+                  className="w-full py-1 px-3 rounded-md bg-gray-100 border border-gray-300"
                 />
               </div>
               <div className="mb-4">
@@ -65,7 +73,7 @@ const Contact = ({ data }) => {
                 <textarea
                   id="message"
                   name="message"
-                  className="w-full h-28 py-1 px-3 rounded-md bg-gray-50 border border-gray-300"
+                  className="w-full h-28 py-1 px-3 rounded-md bg-gray-100 border border-gray-300"
                 />
               </div>
               <button

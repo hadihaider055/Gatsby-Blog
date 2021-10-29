@@ -15,7 +15,7 @@ const BlogList = ({ blogs = [] }) => {
               alt={title}
               className="h-60 rounded-lg md:h-44 sm:h-40"
             />
-            <h5 className="mb-0 mt-1 text-gray-900 font-medium font-serif">
+            <h5 className="mb-0 mt-1 text-gray-900 font-medium font-serif line-clamp-1">
               {title}
             </h5>
             <div className="flex items-center justify-between mt-4">
