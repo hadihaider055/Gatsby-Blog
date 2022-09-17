@@ -20,7 +20,7 @@
     "@tailwindcss/line-clamp": "^0.2.2",
     "dotenv": "^10.0.0",
     "gatsby": "^4.22.1",
-    "gatsby-plugin-image": "^2.21.0",
+    "gatsby-plugin-image": "^2.23.0",
     "gatsby-plugin-react-helmet": "^5.22.0",
     "gatsby-plugin-sharp": "^4.21.0",
     "gatsby-source-contentful": "^6.0.0",
