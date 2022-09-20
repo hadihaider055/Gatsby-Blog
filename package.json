@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.5.1",
-    "@contentful/rich-text-types": "^15.5.1",
+    "@contentful/rich-text-types": "^15.13.2",
     "@tailwindcss/line-clamp": "^0.2.2",
     "dotenv": "^10.0.0",
     "gatsby": "^4.22.1",
